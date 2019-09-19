@@ -3,6 +3,6 @@
 def call() {
  
 
- checkstyle canComputeNew: false, defaultEncoding: '', healthy: '', pattern: ' checkstyle pattern: \'eslint.xml\'', unHealthy: ''
+checkstyle canComputeNew: false, defaultEncoding: '', healthy: '', pattern: 'eslint.xml', unHealthy: ''
  
 }
