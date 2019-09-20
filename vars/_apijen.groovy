@@ -32,7 +32,7 @@ def call(){
     }
  
    
-   post {
+  post {
    failure {
       email()
       }
@@ -44,10 +44,8 @@ def call(){
        _addBadge()  
        _checkstyle()
        _sonar()
-     //  _env()
-     // _cobertura()
    } 
   }
- 
-  }
+ }
+
 }
