@@ -22,10 +22,9 @@ def call(){
                     _coberturacommand()         
             }
         }
-      stage ('sonarqube') {
+     stage ('sonarqube') {
             steps {
-                     _sonarscanner()                    
-            }
+                     _sonarqube()  
         }    
     }   
 
@@ -40,7 +39,7 @@ post {
    always {       
        _addBadge()  
        _checkstyle()
-       _sonarqube()
+       _sonar()
    } 
   }
  }
