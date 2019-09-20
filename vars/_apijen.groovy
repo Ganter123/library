@@ -27,8 +27,16 @@ def call(){
                      sh 'npm install sonarqube-scanner --save-dev' 
         }    
     }   
+     
+     stage ('authname') {
+      steps{
+       _env()
+      }
+     }
     }
-post {
+ 
+   
+   post {
    failure {
       email()
       }
@@ -40,7 +48,7 @@ post {
        _addBadge()  
        _checkstyle()
        _sonar()
-       _env()
+     //  _env()
      // _cobertura()
    } 
   }
