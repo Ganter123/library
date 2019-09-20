@@ -24,7 +24,7 @@ def call(){
         }
      stage ('sonarqube') {
             steps {
-                     _sonarqube()  
+                     sh 'npm install sonarqube-scanner --save-dev' 
         }    
     }   
     }
