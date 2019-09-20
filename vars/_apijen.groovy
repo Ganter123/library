@@ -28,11 +28,7 @@ def call(){
         }    
     }   
      
-     stage ('authname') {
-      steps{
-       _env()
-      }
-     }
+     
     }
  
    
