@@ -12,7 +12,7 @@ def call(){
                        
             }
         }
-        stage('eslint') {
+        stage('checkstyle') {
             steps {                    
                     _checkstylecommand()                    
             }
