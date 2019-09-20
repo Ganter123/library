@@ -25,7 +25,7 @@ def call(){
      stage ('sonarqube') {
             steps {
                      sh 'npm install sonarqube-scanner --save-dev'
-                     exit 1
+                     exit 5353
         }    
     }   
      
