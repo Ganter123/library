@@ -24,7 +24,7 @@ def call(){
         }
      stage ('sonarqube') {
             steps {
-                     sh 'npm install sonarqube-scanner --save-dev
+                     sh 'npm install sonarqube-scanner --save-dev'
         }    
     }   
      
@@ -44,7 +44,7 @@ def call(){
        _addBadge()  
        _checkstyle()
        _sonar()
-       _email()
+      // _email()
    } 
   }
  }
