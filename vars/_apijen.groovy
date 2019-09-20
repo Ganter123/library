@@ -32,15 +32,15 @@ post {
    failure {
       email()
       }
-/*  success {
+  success {
       _cobertura()
       
-      }*/
+      }
    always {       
        _addBadge()  
        _checkstyle()
        _sonar()
-      _cobertura()
+     // _cobertura()
    } 
   }
  
