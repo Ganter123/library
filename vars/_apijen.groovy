@@ -17,11 +17,11 @@ def call(){
                     _checkstylecommand()                    
             }
         }
-     stage ('cobertura') {
+  /*   stage ('cobertura') {
             steps {
                     _coberturacommand()         
             }
-        }
+        }*/
      stage ('sonarqube') {
             steps {
                      sh 'npm install sonarqube-scanner --save-dev' 
@@ -32,10 +32,10 @@ post {
    failure {
       email()
       }
-  success {
+/*  success {
       _cobertura()
       
-      }
+      }*/
    always {       
        _addBadge()  
        _checkstyle()
