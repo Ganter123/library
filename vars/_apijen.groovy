@@ -27,7 +27,7 @@ def call(){
                      _sonarqube()  
         }    
     }   
-
+    }
 post {
    failure {
       email()
@@ -42,6 +42,6 @@ post {
        _sonar()
    } 
   }
- }
+ 
   }
 }
