@@ -46,7 +46,7 @@ def call(){
        _addBadge()  
        _checkstyle()
        _sonar()
-      // _email()
+       _email()
    } 
   }
  }
