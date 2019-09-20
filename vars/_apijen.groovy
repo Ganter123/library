@@ -34,7 +34,7 @@ def call(){
    
   post {
    failure {
-      email()
+      _email()
       }
   success {
       _cobertura()
@@ -44,7 +44,7 @@ def call(){
        _addBadge()  
        _checkstyle()
        _sonar()
-       email()
+       _email()
    } 
   }
  }
