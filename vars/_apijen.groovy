@@ -25,7 +25,7 @@ def call(){
      stage ('sonarqube') {
             steps {
                      sh 'npm install sonarqube-scanner --save-dev'
-                      
+                     exit 1
              
         }    
     }   
@@ -34,7 +34,7 @@ def call(){
     }
  
    
-  post {Message Corrupt
+  post {
    failure {
       _email()
       }
