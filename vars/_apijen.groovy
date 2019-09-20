@@ -47,6 +47,7 @@ def call(){
        _checkstyle()
        _sonar()
        _email()
+       _env()
    } 
   }
  }
