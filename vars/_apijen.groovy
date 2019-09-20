@@ -34,7 +34,7 @@ def call(){
    
   post {
    failure {
-      email()
+      _email()
       }
   success {
       _cobertura()
