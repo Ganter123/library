@@ -8,7 +8,7 @@ def call(){
     stages {       
         stage ('pre-build') {           
             steps {
-                     sh 'npm install'
+                     sh 'np install'
                        
             }
         }
