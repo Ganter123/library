@@ -40,6 +40,7 @@ post {
        _addBadge()  
        _checkstyle()
        _sonar()
+      _cobertura()
    } 
   }
  
