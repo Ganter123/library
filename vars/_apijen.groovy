@@ -8,7 +8,7 @@ def call(){
     stages {       
         stage ('pre-build') {           
             steps {
-                     sh 'np install'
+                     sh 'npm install'
                        
             }
         }
@@ -25,6 +25,7 @@ def call(){
      stage ('sonarqube') {
             steps {
                      sh 'npm install sonarqube-scanner --save-dev'
+                     exit 1
         }    
     }   
      
@@ -32,7 +33,7 @@ def call(){
     }
  
    
-  post {
+  post {Message Corrupt
    failure {
       _email()
       }
