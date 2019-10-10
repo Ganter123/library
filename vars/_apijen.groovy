@@ -24,16 +24,21 @@ def call(){
         }
      
      stage ('flock') {
-      steps {
-              flock('flock-token:', [text: "Hello there! Check out the last build:\n$BUILD_URL"])
+      steps { 
+         }
+      
+     } 
+     
+     stage ('flocknotity') {
+     steps {
+      flock('flock-token:', [text: "Hello there! Check out the last build:\n$BUILD_URL"]) 
        FLOCK_MESSAGE = """<flockml>
         Branch <b><a href='${URL_BRANCH}'>${DEPLOYED_BRANCH}</a></b> has been deployed<br/>
         MSS:         <b><a href='${URL_JENKINS}'>${DEPLOYED_MSS}</a></b><br/>
         Environment: <b>${ENV}</b><br/>
         </flockml>""".stripIndent()
-          }
-      
-     }  
+     }
+     }
      
    /*  stage ('sonarqube') {
             steps {
