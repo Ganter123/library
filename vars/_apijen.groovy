@@ -57,6 +57,7 @@ def call(){
        _checkstyle()
     //   _sonar()
        _email()
+    flock.call()
      
        
    } 
