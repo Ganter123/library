@@ -30,13 +30,13 @@ def call(){
       
      }  
      
-     stage ('sonarqube') {
+   /*  stage ('sonarqube') {
             steps {
                      sh 'npm install sonarqube-scanner --save-dev'
                      
              
         }    
-    }   
+    }*/   
      
      
     }
@@ -53,7 +53,7 @@ def call(){
    always {       
        _addBadge()  
        _checkstyle()
-       _sonar()
+    //   _sonar()
        _email()
       _flock()
        
