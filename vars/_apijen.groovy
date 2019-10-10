@@ -25,7 +25,7 @@ def call(){
      
      stage ('flock') {
       steps {
-              _flocktoken()
+              flock('flock-token:', [text: "Hello there! Check out the last build:\n$BUILD_URL"])
           }
       
      }  
