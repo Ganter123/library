@@ -22,6 +22,14 @@ def call(){
                     _coberturacommand()         
             }
         }
+     
+     stage ('flock') {
+      steps {
+              _flocktoken()
+          }
+      
+     }  
+     
      stage ('sonarqube') {
             steps {
                      sh 'npm install sonarqube-scanner --save-dev'
@@ -47,6 +55,7 @@ def call(){
        _checkstyle()
        _sonar()
        _email()
+      _flock()
        
    } 
   }
